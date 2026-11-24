@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 if (a.contains("@")){
                     String a1 = h1.getText().toString();
                     String a2 = h2.getText().toString();
-                    if (a1.equals(a2)){
+                    if(a1.isEmpty() || a2.isEmpty() ){
+                        witaj.setText("Haslo puste");
+                    }
+                    else if (a1.equals(a2)){
                         witaj.setText("Witaj " + email.getText() + "autor jakub  pesele 03213312321");
 
                     }else {
